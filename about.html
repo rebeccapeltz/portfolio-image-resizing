@@ -8,96 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+
     <style>
-        body {
-            /* margin: 40px; */
-        }
 
-        .sidebar {
-            grid-area: sidebar;
-        }
-
-        .content {
-            grid-area: content;
-            position: relative;
-        }
-
-        .header {
-            grid-area: header;
-        }
-
-        .footer {
-            grid-area: footer;
-        }
-
-        .wrapper {
-            padding: 3rem;
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-                "header  header  header"
-                "sidebar content content"
-                "footer  footer  footer";
-            background-color: #fff;
-            color: #444;
-            width: 100vw;
-            height: 100vh;
-        }
-
-
-        .box {
-            background-color: #444;
-            color: #fff;
-            border-radius: 5px;
-            padding: 50px;
-            font-size: 150%;
-        }
-
-        .header,
-        .footer {
-            background-color: #999;
-        }
-
-        .topleft {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .topright {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .bottomleft {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bottomright {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        .container {
-            background-image: url('https://via.placeholder.com/1600x200?text=1600x200')
-        }
     </style>
 </head>
 
@@ -116,37 +30,86 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">Home</a></li>
-                    <!-- <li class="active"><a href="./about.html">About</a></li> -->
-                    <!-- <li><a href="#">Gallery</a></li> -->
-                    <!-- <li><a href="#">Contact</a></li> -->
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="./about.html"> About</a></li>
                 </ul>
-                <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
+
             </div>
         </div>
     </nav>
 
-    <div class="wrapper">
-        <div class="box header">Header</div>
-        <div class="box sidebar"><img src="https://res.cloudinary.com/picturecloud7/image/facebook/h_300,w_500,c_fill,g_face/officialchucknorrispage.jpg" alt="My Photo"></div>
-        <div class="box content">Content
-            <br /> The four arrows are inline images inside the content area.
-            <img src="http://gridbyexample.com/examples/code/arrow-top-left.png" alt="top left" class="topleft" />
-            <img src="http://gridbyexample.com/examples/code/arrow-top-right.png" alt="top right" class="topright" />
-            <img src="http://gridbyexample.com/examples/code/arrow-bottom-left.png" alt="bottom left"
-                class="bottomleft" />
-            <img src="http://gridbyexample.com/examples/code/arrow-bottom-right.png" alt="bottom right"
-                class="bottomright" />
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-10">
+                <div class="about-caption mb-50">
+
+                    <div class="section-tittle mb-35">
+                        <h2>About</h2>
+                    </div>
+                    <p>For more than 5 years now, design has been the central piece of my world. On this fast and
+                        mind-blowing journey, I have moved over the years from being a visual designer to a full-time
+                        UX/UI thinker and designer.</p>
+                    <p>At the moment, this journey has brought me to Cloud Academy in Mendrisio, Switzerland where I am
+                        a full-time Product Designer. In this position, as with freelance, I am working remotely and I
+                        have been for approximately two years.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="https://via.placeholder.com/570x527?text=570x527" alt=""
+                        data-pagespeed-url-hash="3746540497"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
         </div>
-        <div class="box footer">Footer</div>
+        <!-- <div class="row pt-40">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="experience">
+                    <span>06 years</span>
+                    <p>of experience</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="experience">
+                    <span>$40M+</span>
+                    <p>invested in projects I was<br> involved in</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="experience">
+                    <span>Multiple</span>
+                    <p>industry awards</p>
+                </div>
+            </div>
+        </div> -->
     </div>
 
     <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <div class="container">
+            <div class="row">
+                <!-- Footer Social Icons-->
+                <div class="mb-0">
+                    <a href="https://www.linkedin.com" target="blank" class="svg">
+                        <object data="./assets/linkedin-with-circle.svg" width="50" height="50"> </object>
+                    </a>
+                    <a href="https://www.twitter.com" target="blank" class="svg">
+                        <object data="./assets/twitter-circle.svg" width="50" height="50"> </object>
+                    </a>
+                    <a href="https://www.instagram.com" target="blank" class="svg">
+                        <object data="./assets/instagram-with-circle.svg" width="50" height="50"> </object>
+                    </a>
+                    <a href="https://www.github.com" target="blank" class="svg">
+                        <object data="./assets/brand-github.svg" width="50" height="50"> </object>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright py-4 text-center text-white">
+            <div><small>Copyright © Your Website 2022</small></div>
+        </div>
     </footer>
 
 </body>
