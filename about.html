@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            /* margin: 40px; */
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .content {
+            grid-area: content;
+            position: relative;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .wrapper {
+            padding: 3rem;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "header  header  header"
+                "sidebar content content"
+                "footer  footer  footer";
+            background-color: #fff;
+            color: #444;
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 50px;
+            font-size: 150%;
+        }
+
+        .header,
+        .footer {
+            background-color: #999;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .topright {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        .container {
+            background-image: url('https://via.placeholder.com/1600x200?text=1600x200')
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <!-- <li class="active"><a href="./about.html">About</a></li> -->
+                    <!-- <li><a href="#">Gallery</a></li> -->
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./about.html"> About</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar"><img src="https://res.cloudinary.com/picturecloud7/image/facebook/h_300,w_500,c_fill,g_face/officialchucknorrispage.jpg" alt="My Photo"></div>
+        <div class="box content">Content
+            <br /> The four arrows are inline images inside the content area.
+            <img src="http://gridbyexample.com/examples/code/arrow-top-left.png" alt="top left" class="topleft" />
+            <img src="http://gridbyexample.com/examples/code/arrow-top-right.png" alt="top right" class="topright" />
+            <img src="http://gridbyexample.com/examples/code/arrow-bottom-left.png" alt="bottom left"
+                class="bottomleft" />
+            <img src="http://gridbyexample.com/examples/code/arrow-bottom-right.png" alt="bottom right"
+                class="bottomright" />
+        </div>
+        <div class="box footer">Footer</div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+    </footer>
+
+</body>
+
+</html>
