@@ -36,7 +36,11 @@ footer {
 }
 
 .jumbotron {
-    background-image: url('https://via.placeholder.com/1600x200?text=1600x200')
+    background-image: url('https://via.placeholder.com/1600x300?text=1600x300')
+}
+
+.home-intro {
+    font-weight: 350 !important;
 }
 
 .my-image {
@@ -49,4 +53,4 @@ footer {
     left: 0;
     right: 0;
     height: 125px;
-  } 
+}
