@@ -38,3 +38,7 @@ footer {
 .jumbotron {
     background-image: url('https://via.placeholder.com/1600x200?text=1600x200')
 }
+
+.my-image {
+    padding-top: 2rem;
+}
