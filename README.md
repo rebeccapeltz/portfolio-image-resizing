@@ -3,7 +3,8 @@ This project is part of a course in which students can get experiences creating 
 
 In step 2 the student will collect images to use in the web pages that make up this project: 
 
-- 8 images that show their work
+- 1 image that show their work for home page (up to 8)
+- 1 image for each project page (up to 8)
 - 4 images that show their skills
 - a picutre of themselves
 

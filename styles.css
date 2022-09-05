@@ -42,3 +42,11 @@ footer {
 .my-image {
     padding-top: 2rem;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 125px;
+  } 
