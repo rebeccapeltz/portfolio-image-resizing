@@ -36,11 +36,11 @@ footer {
 }
 
 .jumbotron {
-    background-image: url('https://via.placeholder.com/1600x300?text=1600x300')
+    background-image: url('https://res.cloudinary.com/picturecloud7/image/upload/c_crop,w_1600,h_300,g_west,o_50/capstone/clouds.jpg')
 }
 
 .jumbotron > div {
-    background-color: lightgray;
+    background-color: #eee;
 }
 
 
@@ -58,5 +58,10 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 125px;
+    height: 80px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
 }
