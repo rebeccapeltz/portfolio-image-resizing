@@ -40,7 +40,7 @@ footer {
 }
 
 .jumbotron > div {
-    background-color: lightgray;
+    background-color: #eee;
 }
 
 
@@ -58,5 +58,10 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 125px;
+    height: 80px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
 }
