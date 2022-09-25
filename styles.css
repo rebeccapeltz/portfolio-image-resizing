@@ -39,12 +39,6 @@ footer {
     background-image: url('https://via.placeholder.com/1600x300?text=1600x300')
 }
 
-.jumbotron > div {
-    background-color: #eee;
-}
-
-
-
 .home-intro {
     font-weight: 350 !important;
 }
@@ -64,4 +58,8 @@ footer {
 .project-image {
     max-width: 100%;
     height: auto;
+}
+
+body {
+    background-color: #f2f2f2;
 }
