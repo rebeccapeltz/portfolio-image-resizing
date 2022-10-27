@@ -36,7 +36,9 @@ footer {
 }
 
 .jumbotron {
-    background-image: url('https://res.cloudinary.com/picturecloud7/image/upload/c_crop,w_1600,h_300,g_west,o_50/capstone/clouds.jpg')
+    background-image: url('https://res.cloudinary.com/picturecloud7/image/upload/c_crop,w_1600,h_300,g_west,o_50/capstone/clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-intro {
@@ -67,4 +69,9 @@ footer {
 
 body {
     background-color: #f2f2f2;
+}
+
+.resume a{
+    font-size: 2rem;
+    color: #515151;
 }
