@@ -20,3 +20,19 @@ You can run a server globally using an NPM package [serve](https://www.npmjs.com
  ```
 
 If you use Visual Studio Code, yo can use an extension like [Live Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server).
+
+
+## Deploy
+
+# Steps to deploy
+
+- add a new repo - you'll see instructions for pushing to remote
+- git init
+- git add .
+- git commit -m"first"
+- push to remote
+- go to project repo
+- go to settings pages
+- choose the branch
+- mark for https
+- wait a couple of minutes and try to access on the web
